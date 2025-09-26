@@ -19,6 +19,6 @@ object Recursion {
 
 
   def main(args: Array[String]): Unit = {
-    println(s"Sum= ${sum(10)}")
+    println(s"ISPrime= ${isPrime(1709)}")
   }
 }
