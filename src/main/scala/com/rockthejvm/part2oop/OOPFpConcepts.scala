@@ -295,3 +295,17 @@ object OOPFpConcepts {
     println("== Done ==")
   }
 }
+
+/*
+KEY TAKEAWAYS (enterprise lens):
+
+- Prefer immutable case classes for your domain; use .copy(...) for changes.
+- Model states & variants explicitly with enums/sealed traits; pattern match exhaustively.
+- Use traits for behavior: default methods, multiple inheritance via mixins, stackable behavior with 'abstract override'.
+- There’s no 'static': use companion objects for factories, smart constructors, constants.
+- Push errors to the type level with Either/ADT instead of throwing everywhere.
+- Type classes (given/using + extension) let you add behavior without modifying types or inheritance chains.
+- Keep side-effects at the edges (e.g., logging/IO), keep core pure when possible.
+
+This style scales better for testing, reasoning, and maintenance in large codebases.
+*/
